@@ -11,7 +11,12 @@ function MovieList(props) {
     <MovieListContainer>
       <MovieListGrid>
         {movies && movies.map((movie) => {
-          const { id, poster_path, original_title, liked } = movie;
+          const {
+            id,
+            poster_path,
+            original_title,
+            liked
+          } = movie;
 
           return  (
             <MoviePoster

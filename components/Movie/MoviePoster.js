@@ -9,7 +9,7 @@ import {
 function MoviePoster(props) {
   const likedMovie = 'liked';
   const { id, poster, liked } = props;
-  const [movies, setMovies] = useappContext();
+  const [ movies, setMovies ] = useappContext();
   const [ toggleFavorites ] = useFavorites(movies, id, likedMovie);
  
   return (
